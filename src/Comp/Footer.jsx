@@ -8,7 +8,7 @@ function Footer() {
       <div className="container">
         <div className="row g-4">
           
-          {/* 1. Brand Section */}
+          
           <div className="col-lg-4 col-md-6">
             <h3 className="fw-bold mb-3">RUMBA <span className="text-warning">GROUP</span></h3>
             <p className="text-secondary small">
@@ -21,7 +21,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* 2. Quick Links */}
+          
           <div className="col-lg-2 col-md-6">
             <h5 className="fw-bold mb-3">Quick Links</h5>
             <ul className="list-unstyled">
@@ -31,23 +31,14 @@ function Footer() {
               </ul>
           </div>
 
-          {/* 3. Services Section */}
-          <div className="col-lg-3 col-md-6">
-            <h5 className="fw-bold mb-3">Our Services</h5>
-            <ul className="list-unstyled text-secondary small">
-              <li className="mb-2">Civil Construction</li>
-              <li className="mb-2">Renovation</li>
-              <li className="mb-2">Exterior / Interior Designs</li>
-              <li className="mb-2">Project Management</li>
-            </ul>
-          </div>
+        
 
-          {/* 4. Contact Info */}
+          
           <div className="col-lg-3 col-md-6">
             <h5 className="fw-bold mb-3">Contact Us</h5>
             <ul className="list-unstyled text-secondary small">
               <li className="mb-3 d-flex align-items-center gap-2">
-                <FaMapMarkerAlt className="text-warning" /> Sydney, Australia / Kathmandu, Nepal
+                <FaMapMarkerAlt className="text-warning" />  Kathmandu, Nepal
               </li>
               <li className="mb-3 d-flex align-items-center gap-2">
                 <FaPhoneAlt className="text-warning" /> 980-2338566
@@ -65,7 +56,7 @@ function Footer() {
         <div className="row align-items-center">
           <div className="col-md-6 text-center text-md-start">
             <p className="small text-secondary mb-0">
-              © {new Date().getFullYear()} Rumba Construction Group. All Rights Reserved.
+             @Rumba Construction Group. All Rights Reserved.
             </p>
           </div>
           <div className="col-md-6 text-center text-md-end mt-2 mt-md-0">

@@ -4,7 +4,7 @@ function Home() {
     return (
         <div style={{ paddingTop: '80px' }}>
 
-            {/* 1. HERO SECTION: Thulo Photo bhako part */}
+           
             <section className="bg-dark text-white py-5 d-flex align-items-center" style={{ minHeight: '80vh', backgroundColor: '#202c3c' }}>
                 <div className="container">
                     <div className="row align-items-center">
@@ -14,7 +14,7 @@ function Home() {
 
                         </div>
                         <div className="col-md-6">
-                            {/* IMAGE BLANK RAKHEKO CHHU BRO */}
+                           
                             <div className="bg-secondary rounded shadow-lg" style={{ width: '100%', height: '400px' }}>
                                 <img src="https://www.asanduff.com/wp-content/uploads/2020/08/rsz_construction_company.jpg" alt="Hero Image" className="w-100 h-100 rounded" style={{ objectFit: 'cover' }} />
                             </div>
@@ -23,7 +23,7 @@ function Home() {
                 </div>
             </section>
 
-            {/* 2. STATS SECTION: Numbers wala part */}
+          
             <section className="py-5 bg-light">
                 <div className="container">
                     <div className="row text-center g-4">
@@ -49,7 +49,7 @@ function Home() {
                 </div>
             </section>
 
-            {/* 3. WHY CHOOSE US: Bullet points wala part */}
+           
             <section className="py-5">
                 <div className="container">
                     <div className="text-center mb-5">
@@ -87,7 +87,7 @@ function Home() {
                 </div>
             </section>
 
-            {/* 4. BLUE BANNER: Zero Delays wala part */}
+           
             <section className="py-4 text-white" style={{ backgroundColor: '#FFCA2C' }}>
                 <div className="container">
                     <div className="row text-center g-4">
@@ -106,7 +106,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* --- HOW WE WORK SECTION START --- */}
+           
             <section className="py-5 bg-light overflow-hidden">
                 <div className="container position-relative">
                     <div className="text-center mb-5">
@@ -115,7 +115,7 @@ function Home() {
                         <div className="bg-warning mx-auto" style={{ height: '3px', width: '60px' }}></div>
                     </div>
 
-                    {/* Vertical Line in Middle */}
+                
                     <div className="d-none d-md-block" style={{
                         position: 'absolute', left: '50%', width: '2px', height: '85%',
                         backgroundColor: '#dee2e6', transform: 'translateX(-50%)', zIndex: 0, marginTop: '20px'
@@ -183,7 +183,7 @@ function Home() {
                         <div className="col-md-5 order-3"></div>
                     </div>
 
-                    {/* Step 04: Commissioning - ABA YO PANI THAPYO HAI! */}
+                    {/* Step 04: Commissioning  */}
                     <div className="row mb-5 align-items-center fade-in-up">
                         <div className="col-md-5 order-1"></div>
                         <div className="col-md-2 text-center order-2 position-relative z-1 mb-3 mb-md-0">
