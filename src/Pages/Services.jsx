@@ -1,100 +1,142 @@
-import React from 'react';
+import React from 'react'
+import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 
 function Services() {
-  const sewa = [
-    {
-      id: 1,
-      head: "Civil Construction",
-      info: "Specialising in road works, drainage, and infrastructure development with high precision.",
-      img: "https://www.jadanconstructiongroup.com/uploads/gallery/album/202301201349_3-min.jpg"
-    },
-    {
-      id: 2,
-      head: "Excavation & Earthworks",
-      info: "Comprehensive bulk excavation and detailed earthworks for residential and commercial projects.",
-      img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFzcC16dQUCU1rBRcU4pdm3SDEBxGhPyBcSaUOdkAK5MzdSylDnSPkhKmCZg99G6Fo_Q2NEK_yYfLgRZLn0NxGEJex-x8hlHUjBUG9EFy7mxlydXU4M6I_6WCMFgLxliuydwA6CyigewE/s1600/2-+Earthwork+Excavation+01.jpg"
-    },
-    {
-      id: 3,
-      head: "Concreting Works",
-      info: "High-quality concrete structures, footways, and kerb and gutter construction.",
-      img: "https://www.civilengineermag.com/wp-content/uploads/2024/12/concrete-works.jpg"
-    },
-    {
-      id: 3,
-      head: "Project Management",
-      info: "End-to-end project management ensuring safety, quality, and timely delivery.",
-      img: "https://www.contractcomplete.com/wp-content/uploads/2024/02/AdobeStock_333094597-1024x683.jpeg"
-    },
-    {
-      id: 4,
-      head: "Plant & Equipment Hire",
-      info: "Providing a range of modern and well-maintained machinery for various construction needs.",
-      img: "https://www.mymobileworkers.com/wp-content/uploads/2024/09/Plant-Hire-2-1024x683.jpeg"
-    },
-    {
-      id: 5,
-      head: "Site Preparation",
-      info: "Professional site clearing and preparation to ensure a solid foundation for your project.",
-      img: "https://verdeterrecontracting.com/wp-content/uploads/2025/02/site-preparation-contractors-1080x675.jpg"
-    }
-  ];
-
   return (
-    <div className="bg-white pt-5 mt-5">
-      <section className="container py-5 text-center">
-        <h6 className="text-warning fw-bold text-uppercase">
-          OUR WORK
-        </h6>
-        <h1 className="fw-bold display-5 mb-4 text-dark">
-          Our Professional Services
-        </h1>
-        <p className="text-muted mx-auto" style={{ maxWidth: '700px' }}>
-          Jadan Construction Group provides a wide range of civil construction services across Sydney.
-        </p>
-      </section>
+  <>
+   <section className="py-5 bg-light">
+                <div className="container py-4">
+                    {/* Section Header */}
+                    <div className="text-center mb-5">
+                        <h2 className="fw-bold" style={{ color: '#001A7E' }}>
+                            Our Quality <span style={{ color: '#f39c12' }}>Services</span>
+                        </h2>
+                        <p className="text-muted mx-auto" style={{ maxWidth: '700px' }}>
+                            Discover our comprehensive range of construction and development services
+                        </p>
+                    </div>
 
-      <section className="container pb-5">
-        <div className="row g-4">
-          {sewa.map((s) => (
-            <div className="col-lg-4 col-md-6" key={s.id}>
-              <div className="card h-100 border-0 shadow-sm overflow-hidden">
-                <div style={{ height: '220px' }}>
-                  <img
-                    src={s.img}
-                    alt={s.head}
-                    className="w-100 h-100 object-fit-cover"
-                  />
-                </div>
+                    {/* Services Grid */}
+                    <div className="row g-4">
 
-                <div className="card-body p-4 text-center">
-                  <h4 className="fw-bold mb-3">{s.head}</h4>
-                  <p className="text-secondary small mb-0">
-                    {s.info}
-                  </p>
+                        {/* 1. Construction Card */}
+                        <div className="col-lg-4 col-md-6">
+                            <motion.div
+                                whileHover={{ y: -10 }}
+                                className="bg-white rounded-4 overflow-hidden h-100 shadow-sm border-0"
+                            >
+                                <img
+                                    src="https://i.pinimg.com/736x/4a/f1/a9/4af1a985d2c8271599233b612e301238.jpg"
+                                    alt="Construction"
+                                    className="w-100"
+                                    style={{ height: '250px', objectFit: 'cover' }}
+                                />
+                                <div className="p-4">
+                                    <h5 className="fw-bold mb-3" style={{ color: '#333' }}>Construction (RCC & Steel Structure)</h5>
+                                    <p className="small text-muted mb-4" style={{ lineHeight: '1.6' }}>
+                                        Construction is the ultimate phase where the design values and details take ...
+                                    </p>
+                                    <Link
+                                        to="/services"
+                                        className="text-decoration-none fw-bold d-inline-flex align-items-center gap-2 transition-all read-more-btn"
+                                        style={{ color: '#0056D2' }}
+                                    >
+                                        Read More
+                                        <motion.span
+                                            variants={{
+                                                initial: { x: 0 },
+                                                hover: { x: 5 } // Hover garda icon 5px right slide hunchha
+                                            }}
+                                            transition={{ type: 'spring', stiffness: 400 }}
+                                        >
+                                            <ArrowRight size={18} />
+                                        </motion.span>
+                                    </Link>
+                                </div>
+                            </motion.div>
+                        </div>
+
+                        {/* 2. Renovation Card */}
+                        <div className="col-lg-4 col-md-6">
+                            <motion.div
+                                whileHover={{ y: -10 }}
+                                className="bg-white rounded-4 overflow-hidden h-100 shadow-sm border-0"
+                            >
+                                <img
+                                    src="https://i.pinimg.com/736x/2f/df/0f/2fdf0fc42c31f04b72147c428a97b241.jpg"
+                                    alt="Renovation"
+                                    className="w-100"
+                                    style={{ height: '250px', objectFit: 'cover' }}
+                                />
+                                <div className="p-4">
+                                    <h5 className="fw-bold mb-3" style={{ color: '#333' }}>Renovation</h5>
+                                    <p className="small text-muted mb-4" style={{ lineHeight: '1.6' }}>
+                                        Welcome to <span style={{ color: '#f39c12' }}>Larkyung Construction Group</span>, your trusted source for professional renovation ...
+                                    </p>
+                                    <Link
+                                        to="/services"
+                                        className="text-decoration-none fw-bold d-inline-flex align-items-center gap-2 transition-all read-more-btn"
+                                        style={{ color: '#0056D2' }}
+                                    >
+                                        Read More
+                                        <motion.span
+                                            variants={{
+                                                initial: { x: 0 },
+                                                hover: { x: 5 } // Hover garda icon 5px right slide hunchha
+                                            }}
+                                            transition={{ type: 'spring', stiffness: 400 }}
+                                        >
+                                            <ArrowRight size={18} />
+                                        </motion.span>
+                                    </Link>
+                                </div>
+                            </motion.div>
+                        </div>
+
+                        {/* 3. Exterior/Interior Designs Card */}
+                        <div className="col-lg-4 col-md-6">
+                            <motion.div
+                                whileHover={{ y: -10 }}
+                                className="bg-white rounded-4 overflow-hidden h-100 shadow-sm border-0"
+                            >
+                                <img
+                                    src="https://i.pinimg.com/1200x/06/77/29/0677294bb8976762e149ff1b32823799.jpg"
+                                    alt="Interior Design"
+                                    className="w-100"
+                                    style={{ height: '250px', objectFit: 'cover' }}
+                                />
+                                <div className="p-4">
+                                    <h5 className="fw-bold mb-3" style={{ color: '#333' }}>Exterior / Interior Designs</h5>
+                                    <p className="small text-muted mb-4" style={{ lineHeight: '1.6' }}>
+                                        We listen to your needs and <strong>expectations of a home</strong>, commercial complex, hotels ...
+                                    </p>
+                                    <Link
+                                        to="/services"
+                                        className="text-decoration-none fw-bold d-inline-flex align-items-center gap-2 transition-all read-more-btn"
+                                        style={{ color: '#0056D2' }}
+                                    >
+                                        Read More
+                                        <motion.span
+                                            variants={{
+                                                initial: { x: 0 },
+                                                hover: { x: 5 } // Hover garda icon 5px right slide hunchha
+                                            }}
+                                            transition={{ type: 'spring', stiffness: 400 }}
+                                        >
+                                            <ArrowRight size={18} />
+                                        </motion.span>
+                                    </Link>
+                                </div>
+                            </motion.div>
+                        </div>
+
+                    </div>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-      <section className="bg-dark text-white py-5 mt-4">
-        <div className="container py-4">
-          <div className="row align-items-center">
-            <div className="col-md-8">
-              <h2 className="fw-bold">Need a custom construction solution?</h2>
-              <p className="text-light mb-0">Contact our expert team today.</p>
-            </div>
-            <div className="col-md-4 text-md-end mt-4 mt-md-0">
-              <button className="btn btn-warning fw-bold px-5 py-3 rounded-0">
-                GET A QUOTE
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
+            </section>
+  </>
+  )
 }
 
-export default Services;
+export default Services

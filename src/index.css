@@ -6,3 +6,27 @@
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* Navbar jittering rokna layout stable rakhne */
+html {
+  scroll-behavior: auto !important; /* Browser ko default scroll hatayera Lenis lai control dina */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar sticky huda screen jump huna nadina */
+.navbar {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.read-more-btn {
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  color: #f39c12 !important; /* Blue bata Orange/Yellow ma change hunchha */
+  text-decoration: underline !important;
+}
