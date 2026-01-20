@@ -336,12 +336,14 @@ const Home = () => {
                                     <h4 className="text-white fw-bold mb-3">Floor Plan</h4>
 
                                     {/* Button from Reference */}
+                                    <Link to="/fp">
                                     <button
                                         className="btn btn-primary rounded-pill px-4 py-2 d-flex align-items-center gap-2"
                                         style={{ backgroundColor: '#0056D2', border: 'none', fontWeight: 'bold' }}
                                     >
                                         View Gallery <i className="bi bi-images"></i>
                                     </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         </SwiperSlide>
@@ -378,12 +380,14 @@ const Home = () => {
                                     <h4 className="text-white fw-bold mb-3">Interior Design</h4>
 
                                     {/* Button from Reference */}
+                                    <Link to="/id">
                                     <button
                                         className="btn btn-primary rounded-pill px-4 py-2 d-flex align-items-center gap-2"
                                         style={{ backgroundColor: '#0056D2', border: 'none', fontWeight: 'bold' }}
                                     >
                                         View Gallery <i className="bi bi-images"></i>
                                     </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         </SwiperSlide>
@@ -418,12 +422,14 @@ const Home = () => {
                                     <h4 className="text-white fw-bold mb-3">Construction Underway</h4>
 
                                     {/* Button from Reference */}
+                                    <Link to="/CU">
                                     <button
                                         className="btn btn-primary rounded-pill px-4 py-2 d-flex align-items-center gap-2"
                                         style={{ backgroundColor: '#0056D2', border: 'none', fontWeight: 'bold' }}
                                     >
                                         View Gallery <i className="bi bi-images"></i>
                                     </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         </SwiperSlide>
@@ -457,12 +463,14 @@ const Home = () => {
                                     <h4 className="text-white fw-bold mb-3">Renovation</h4>
 
                                     {/* Button from Reference */}
+                                    <Link to='/Renovation'>
                                     <button
                                         className="btn btn-primary rounded-pill px-4 py-2 d-flex align-items-center gap-2"
                                         style={{ backgroundColor: '#0056D2', border: 'none', fontWeight: 'bold' }}
                                     >
                                         View Gallery <i className="bi bi-images"></i>
                                     </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         </SwiperSlide>
@@ -496,12 +504,14 @@ const Home = () => {
                                     <h4 className="text-white fw-bold mb-3">Interior Construction</h4>
 
                                     {/* Button from Reference */}
+                                    <Link to="/IC">
                                     <button
                                         className="btn btn-primary rounded-pill px-4 py-2 d-flex align-items-center gap-2"
                                         style={{ backgroundColor: '#0056D2', border: 'none', fontWeight: 'bold' }}
                                     >
                                         View Gallery <i className="bi bi-images"></i>
                                     </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         </SwiperSlide>
@@ -509,7 +519,7 @@ const Home = () => {
                 </div>
 
                 {/* Action Button */}
-                <div className="text-center mt-4">
+                {/* <div className="text-center mt-4">
                     <motion.button
                         whileHover={{ scale: 1.05, backgroundColor: '#0046b8' }}
                         whileTap={{ scale: 0.95 }}
@@ -518,7 +528,7 @@ const Home = () => {
                     >
                         View All Galleries <ArrowRight size={20} />
                     </motion.button>
-                </div>
+                </div> */}
 
                 {/* Custom Styles to match Reference Image exactly */}
                 <style dangerouslySetInnerHTML={{
@@ -666,7 +676,7 @@ const Home = () => {
                                         Construction is the ultimate phase where the design values and details take ...
                                     </p>
                                     <Link
-                                        to="/services"
+                                        to="/rcc"
                                         className="text-decoration-none fw-bold d-inline-flex align-items-center gap-2 transition-all read-more-btn"
                                         style={{ color: '#0056D2' }}
                                     >
@@ -703,7 +713,7 @@ const Home = () => {
                                         Welcome to <span style={{ color: '#f39c12' }}>Larkyung Construction Group</span>, your trusted source for professional renovation ...
                                     </p>
                                     <Link
-                                        to="/services"
+                                        to="/rd"
                                         className="text-decoration-none fw-bold d-inline-flex align-items-center gap-2 transition-all read-more-btn"
                                         style={{ color: '#0056D2' }}
                                     >
@@ -740,7 +750,7 @@ const Home = () => {
                                         We listen to your needs and <strong>expectations of a home</strong>, commercial complex, hotels ...
                                     </p>
                                     <Link
-                                        to="/services"
+                                        to="/exterior"
                                         className="text-decoration-none fw-bold d-inline-flex align-items-center gap-2 transition-all read-more-btn"
                                         style={{ color: '#0056D2' }}
                                     >
@@ -1004,14 +1014,17 @@ const Home = () => {
                                     <h4 className="text-white fw-bold mb-3">Basnet Niwas</h4>
 
                                     {/* Button from Reference */}
+                                    <Link to="/BN">
                                     <button
                                         className="btn btn-primary rounded-pill px-4 py-2 d-flex align-items-center gap-2"
                                         style={{ backgroundColor: '#0056D2', border: 'none', fontWeight: 'bold' }}
                                     >
                                         View Details <i className="bi bi-images"></i>
                                     </button>
+                                    </Link>
                                 </div>
                             </motion.div>
+                            
                         </SwiperSlide>
 
                         {/* Slide 2 - Construction Underway */}
@@ -1046,12 +1059,14 @@ const Home = () => {
                                     <h4 className="text-white fw-bold mb-3">Tokha-Bungalow</h4>
 
                                     {/* Button from Reference */}
+                                    <Link to="/TB">
                                     <button
                                         className="btn btn-primary rounded-pill px-4 py-2 d-flex align-items-center gap-2"
                                         style={{ backgroundColor: '#0056D2', border: 'none', fontWeight: 'bold' }}
                                     >
                                         View Details <i className="bi bi-images"></i>
                                     </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         </SwiperSlide>
@@ -1086,12 +1101,14 @@ const Home = () => {
                                     <h4 className="text-white fw-bold mb-3">Pharping Residence</h4>
 
                                     {/* Button from Reference */}
+                                    <Link to="/P">
                                     <button
                                         className="btn btn-primary rounded-pill px-4 py-2 d-flex align-items-center gap-2"
                                         style={{ backgroundColor: '#0056D2', border: 'none', fontWeight: 'bold' }}
                                     >
                                         View Details <i className="bi bi-images"></i>
                                     </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         </SwiperSlide>
@@ -1102,6 +1119,7 @@ const Home = () => {
 
                 {/* Action Button */}
                 <div className="text-center mt-4">
+                    
                     <motion.button
                         whileHover={{ scale: 1.05, backgroundColor: '#0046b8' }}
                         whileTap={{ scale: 0.95 }}
@@ -1110,6 +1128,7 @@ const Home = () => {
                     >
                         SEE MORE <ArrowRight size={20} />
                     </motion.button>
+                    
                 </div>
 
                 {/* Custom Styles to match Reference Image exactly */}

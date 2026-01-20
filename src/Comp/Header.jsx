@@ -89,6 +89,16 @@ function Header() {
                   About Us
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link 
+                  className="nav-link fw-medium px-2 custom-nav-link" 
+                  style={navLinkStyle('/about')}
+                  to="/OW" 
+                  onClick={handleNavClick}
+                >
+                  Our Work
+                </Link>
+              </li>
 
               {/* Services Link with Hover Classes */}
               <li className="nav-item">

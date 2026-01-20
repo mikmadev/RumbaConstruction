@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
 
           {/* 3. Services Links */}
-          <div className="col-lg-3 col-md-6 px-lg-4">
+          {/* <div className="col-lg-3 col-md-6 px-lg-4">
             <h5 className="fw-bold mb-4 position-relative pb-2">
               Our Services
               <span className="position-absolute start-0 bottom-0" style={{ width: '30px', height: '2px', background: '#f39c12' }}></span>
@@ -75,7 +75,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* 4. Contact Info & Newsletter */}
           <div className="col-lg-3 col-md-6">
